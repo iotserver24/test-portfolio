@@ -4,10 +4,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { Navbar } from "@/components/Navbar"; // Import the Navbar component
 
 const Portfolio = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Navbar /> {/* Render the Navbar component here */}
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4">
         <div className="space-y-6">
